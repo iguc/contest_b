@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cチーム用特設サイト</title>
+  <link rel="stylesheet" type="text/css" href="common.css" />
+</head>
+
+<body>
+  <p>１.発表の評価順に並び替えてください</p>
+  <div class="step">
+    <div cless="table">
+      <div class="rank">
+        <div class="num">高</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">　</div>
+        <div class="num">低</div>
+      </div>
+      <!-- 並べ替える要素の一覧 -->
+      <div class="box" id="box">
+        <div id="box_1" class="card item">
+          <div class="card-body">井岡</div>
+        </div>
+        <div id="box_2" class="card item">
+          <div class="card-body">加本</div>
+        </div>
+        <div id="box_3" class="card item">
+          <div class="card-body">中井</div>
+        </div>
+        <div id="box_4" class="card item">
+          <div class="card-body">西村</div>
+        </div>
+        <div id="box_5" class="card item">
+          <div class="card-body">藤井</div>
+        </div>
+        <div id="box_6" class="card item">
+          <div class="card-body">三島</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>２.あなた（審査員）の名前を選んでください</p>
+  <div class="step">
+    <div class="cp_ipselect cp_sl02">
+      <select id="rater" name="rater">
+        <option value="" hidden>＞</option>
+        <option value="ogura">小椋</option>
+        <option value="hiraoka">平岡</option>
+        <option value="ochi">越智</option>
+        <option value="kobayashi">小林</option>
+        <option value="nezu">根津</option>
+      </select>
+    </div>
+  </div>
+  <p>３.ボタンを押すと投票完了です</p>
+  <div class="wrapper">
+    <div class="block">
+      <button class="button success">
+        投票
+      </button>
+    </div>
+  </div>
+
+  <!-- 要素の一覧を表示する部分
+  <div class="card mt-5">
+    <div id="result_box" class="card-body">
+    </div>
+  </div> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="common.js"></script>
+</body>
+
+</html>
